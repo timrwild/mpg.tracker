@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/car_info_add"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    tools:context="timwildauer.final_project.CarInfoAdd" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/data_view"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_text"
+            android:layout_alignEnd="@+id/tank_full_text"
+            android:textSize="20sp"
+            android:text="@string/date_string"
+            android:layout_marginTop="2dp" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_date_month"
+            android:layout_toEndOf="@id/date_text"
+            android:hint="@string/input_month"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/first_slash"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/transaction_date_month"
+            android:text="@string/slash"
+            android:textSize="12pt" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_date_day"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/first_slash"
+            android:hint="@string/input_day"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/second_slash"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/transaction_date_day"
+            android:text="@string/slash"
+            android:textSize="12pt" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_date_year"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/second_slash"
+            android:hint="@string/input_year"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mileage_text"
+            android:layout_below="@+id/date_text"
+            android:layout_alignEnd="@+id/tank_full_text"
+            android:layout_alignBaseline="@+id/transaction_mileage"
+            android:text="@string/mileage_string"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_mileage"
+            android:layout_below="@+id/transaction_date_month"
+            android:layout_alignParentStart="false"
+            android:layout_toEndOf="@id/mileage_text"
+            android:hint="@string/enter_transaction_mileage_string"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gallons_text"
+            android:layout_alignParentEnd="false"
+            android:layout_alignBaseline="@+id/transaction_gallons"
+            android:layout_alignEnd="@+id/tank_full_text"
+            android:text="@string/gallons_string"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_gallons"
+            android:layout_below="@+id/transaction_mileage"
+            android:layout_toEndOf="@+id/gallons_text"
+            android:hint="@string/enter_transaction_gallons_string"
+            android:textSize="20sp"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tank_full_text"
+            android:layout_alignBottom="@+id/transaction_tank_full"
+            android:text="@string/tank_string"
+            android:textSize="20sp"
+            android:layout_marginBottom="3dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_tank_full"
+            android:layout_below="@+id/transaction_gallons"
+            android:layout_toEndOf="@+id/tank_full_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price_text"
+            android:layout_alignBaseline="@+id/transaction_price"
+            android:layout_alignEnd="@+id/tank_full_text"
+            android:text="@string/price_string"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_price"
+            android:layout_below="@+id/transaction_tank_full"
+            android:layout_toEndOf="@+id/price_text"
+            android:hint="@string/enter_transaction_price_string"
+            android:textSize="20sp"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_car_info"
+        android:layout_below="@+id/data_view"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/enter_car_data_string"
+        android:textSize="20sp"
+        android:onClick="enterCarData" />
+
+</RelativeLayout>

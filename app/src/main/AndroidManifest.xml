@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="timwildauer.final_project" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".CarList"
+            android:label="@string/car_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CarListAdd"
+            android:label="@string/title_activity_next_screen"
+            android:parentActivityName=".CarList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CarList" />
+        </activity>
+        <activity
+            android:name=".CarInfo"
+            android:label="@string/title_activity_car_info"
+            android:launchMode="singleTask"
+            android:parentActivityName=".CarList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CarList" />
+        </activity>
+        <activity
+            android:name=".CarInfoAdd"
+            android:label="@string/title_activity_add_car_info"
+            android:parentActivityName=".CarInfo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="timwildauer.final_project.CarInfo" />
+        </activity>
+        <activity
+            android:name=".CarInfoEdit"
+            android:label="@string/title_activity_edit_info"
+            android:parentActivityName=".CarInfo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="timwildauer.final_project.CarInfo" />
+        </activity>
+        <activity
+            android:name=".CarListEdit"
+            android:label="@string/title_activity_car_list_edit"
+            android:parentActivityName=".CarList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="timwildauer.final_project.CarList" />
+        </activity>
+    </application>
+
+</manifest>

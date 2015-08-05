@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/car_list_add" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_buttons"
+        android:layout_centerInParent="true" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_name_text"
+        android:layout_alignBaseline="@+id/car_name"
+        android:layout_alignEnd="@+id/car_model_text"
+        android:text="@string/car_name_text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/car_name_text"
+        android:hint="@string/car_name_hint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_make_text"
+        android:layout_alignBaseline="@+id/car_make"
+        android:layout_alignEnd="@+id/car_model_text"
+        android:text="@string/car_make_text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_make"
+        android:layout_below="@+id/car_name"
+        android:layout_toEndOf="@+id/car_make_text"
+        android:hint="@string/car_make_hint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_model_text"
+        android:layout_alignBaseline="@+id/car_model"
+        android:text="@string/car_model_text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_model"
+        android:layout_below="@+id/car_make"
+        android:layout_toEndOf="@+id/car_model_text"
+        android:hint="@string/car_model_hint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_year_text"
+        android:layout_alignBaseline="@+id/car_year"
+        android:layout_alignEnd="@+id/car_model_text"
+        android:text="@string/car_year_text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_year"
+        android:layout_toEndOf="@+id/car_year_text"
+        android:layout_below="@+id/car_model"
+        android:hint="@string/car_year_hint"
+        android:inputType="number" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_car_button"
+        android:layout_below="@+id/car_buttons"
+        android:layout_centerHorizontal="true"
+        android:text="@string/submit_car"
+        android:layout_marginTop="25dp"
+        android:onClick="submitCar" />
+
+</RelativeLayout>

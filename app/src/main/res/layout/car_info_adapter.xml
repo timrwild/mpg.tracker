@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/data_table_header">
+
+        <TextView
+            android:id="@+id/data_table_date"
+            android:layout_width="0px"
+            android:layout_column="0"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/data_table_mileage"
+            android:layout_width="0px"
+            android:layout_column="0"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/data_table_gallons"
+            android:layout_width="0px"
+            android:layout_column="0"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/data_table_full"
+            android:layout_width="0px"
+            android:layout_column="0"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/data_table_price"
+            android:layout_width="0px"
+            android:layout_column="0"
+            android:layout_weight="0.15" />
+
+        <TextView
+            android:id="@+id/data_table_mpg"
+            android:layout_width="0px"
+            android:layout_column="0"
+            android:layout_weight="0.15"
+            android:gravity="end" />
+
+    </TableRow>
+
+</LinearLayout>

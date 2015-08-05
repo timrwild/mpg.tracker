@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Data Tracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_next_screen">Add New Car</string>
+    <string name="car_name_hint">Name    </string>
+    <string name="car_make_hint">Make    </string>
+    <string name="car_model_hint">Model   </string>
+    <string name="car_year_hint">Year </string>
+    <string name="submit_car">Submit</string>
+    <string name="add_car_button">Add Car</string>
+    <string name="title_activity_car_info">CarInfo</string>
+    <string name="add_info_entry_button">Add Entry</string>
+    <string name="view_all_data_text">View All Data</string>
+    <string name="title_activity_add_car_info">addCarInfo</string>
+    <string name="enter_car_data_string">Enter Data</string>
+    <string name="enter_transaction_price_string">Price</string>
+    <string name="enter_transaction_gallons_string">Gallons</string>
+    <string name="enter_transaction_mileage_string">Mileage</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="enter_transaction_date_string">YYMMDD</string>
+    <string name="title_activity_edit_info">EditInfo</string>
+    <string name="edit_info_entry_button">Edit Info</string>
+    <string name="move_to_next_entry">Next</string>
+    <string name="move_to_previous_entry">Previous</string>
+    <string name="input_month">M</string>
+    <string name="input_day">D</string>
+    <string name="input_year">Y</string>
+    <string name="slash">/</string>
+    <string name="full_tank_string">Tank Full</string>
+    <string name="car_list">Data Tracker</string>
+    <string name="input_date_length" />
+    <string name="date_string">Date:</string>
+    <string name="mileage_string">Mileage:</string>
+    <string name="gallons_string">Gallons:</string>
+    <string name="tank_string">Tank Full:</string>
+    <string name="price_string">Price:</string>
+    <string name="delete_entry_string">Delete</string>
+    <string name="title_activity_car_list_edit">Edit Cars</string>
+    <string name="car_name_text">Car Name:</string>
+    <string name="car_make_text">Car Make:</string>
+    <string name="car_model_text">Car Model:</string>
+    <string name="car_year_text">Car Year:</string>
+    <string name="edit_car_button">Edit Cars</string>
+    <string name="car_info_table_date">Date</string>
+    <string name="car_info_table_mileage">Mileage</string>
+    <string name="car_info_table_gallons">Gallons</string>
+    <string name="car_info_table_full">Full</string>
+    <string name="car_info_table_price">Price</string>
+    <string name="car_info_table_mpg">MPG</string>
+</resources>
